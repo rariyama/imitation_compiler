@@ -10,10 +10,10 @@ func main() {
 		fmt.Println("the number of arguments is not correct")
 		return
 	}
-	fmt.Println(".intel_syntax noprefix\n")
-	fmt.Println(".globl main\n")
-	fmt.Println("main:\n")
+	fmt.Printf(".intel_syntax noprefix\n")
+	fmt.Printf(".globl main\n")
+	fmt.Printf("main:\n")
 	fmt.Printf("  mov rax, %v\n", os.Args[1])
-	fmt.Println("  ret\n")
+	fmt.Printf("  ret\n")
 	return
 }
